@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SDP-Assignment01</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- google fonts "Inter" -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,29 +17,49 @@
     * {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
     font-style: normal;
+    }
+    body{
+        width:80%
     }
     </style>
 </head>
 
 <body class="bg-dark text-white mx-auto Inter">
-    <nav class="navbar bg-dark d-flex justify-content-between align-items-center
-        w-80 px-5 mx-auto" data-bs-theme="dark">
-        <div class="logo-part">
-            <img class="w-25" src="icons/logo.png" alt="My Logo">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-4" data-bs-theme="dark">
+        <div class="d-flex justify-content-between align-items-center w-100">
+        <a class="navbar-brand" href="#">
+            <img src="icons/logo.png" alt="My Portfolio Logo" class="w-25">
+        </a>
+        <button class="navbar-toggler text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         </div>
-        <div class="menu_part d-flex flex-row justify-content-between align-items-center">
-            <ul class="text-white fw-bolder gap-5 d-flex flex-row justify-content-between align-items-center m-0 p-0">
-                <li class="list-group-item">Home</li>
-                <li class="list-group-item">Services</li>
-                <li class="list-group-item">Blog</li>
-                <li class="list-group-item">Content</li>
-                <li class="list-group-item">About</li>
+
+        <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex align-items-end gap-lg-4">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-white" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-white" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-white" href="#">Content</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-white" href="#">About</a>
+                </li>
             </ul>
-            <button type="button" class="btn btn-primary mx-3 fw-bold">Resume
-                <a href="https://www.google.com/" target="_blank" class="text-black"><i class="fa-solid fa-download w-5"></i></a>
-            </button>
+            <div class="d-flex justify-content-end w-100">
+            <a href="https://www.google.com/" target="_blank" class="btn btn-primary fw-bold d-flex align-items-center gap-2">
+                Resume <i class="fa-solid fa-download"></i>
+            </a>
+            </div>
         </div>
     </nav>
 
